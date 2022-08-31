@@ -1,0 +1,125 @@
+/* body {
+    color: gray;
+} */
+
+.navbar-links {
+    text-align: right;
+    margin-right: auto;
+}
+
+.logo-text {
+    font-family: 'Black Ops One', cursive;
+}
+
+.main-img {
+    background-image: url(fms27logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-color: grey;
+    height: 500px;
+    width: 100%;
+}
+
+.img-text {
+    text-align: center;
+    color: black;
+}
+
+.text-div {
+    border: 5px black solid;
+    border-radius: 5%;
+    margin-top: 1em;
+}
+
+.navbar-links a {
+    margin: 0 2em;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-family: 'Michroma', sans-serif;
+}
+
+.pickem-links {
+    text-align: center;
+    /* list-style: none; */
+}
+
+.pickem-links ul {
+    list-style: none;
+}
+
+.sheets li {
+    padding-top: 1em;
+    font-family: 'Michroma', sans-serif;
+    font-weight: bold;
+}
+
+.sheets a {
+    color: black;
+}
+
+
+/* ------------------rules------------------------ */
+
+.rules h3 {
+    font-family: 'Gruppo', cursive;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.rules li {
+    font-family: 'Michroma', sans-serif;
+    list-style: none;
+}
+
+.rules {
+    text-align: center;
+    padding: 5% 0;
+    line-height: 2em;
+}
+
+
+/* ------------------QR Code ------------------------ */
+
+.qrcode {
+    height: 300px;
+    width: 300px;
+}
+
+
+/* ------------------Footer Section------------------------ */
+
+footer {
+    background-color: gray;
+    text-align: center;
+}
+
+.footer {
+    padding: 2px 0 1px 0;
+}
+
+.footer p {
+    color: whitesmoke;
+}
+
+.logo1024 {
+    width: 80px;
+    height: 80px;
+    filter: brightness(100);
+    -webkit-filter: brightness(100);
+    padding-top: 0.5rem;
+}
+
+
+/* ----------------Fonts-------------------
+font-family: 'BioRhyme Expanded', serif;
+font-family: 'Black Ops One', cursive;
+font-family: 'Gruppo', cursive;
+font-family: 'Michroma', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Rubik Mono One', sans-serif;
+
+------------------------------------------------ */
