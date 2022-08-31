@@ -1,2 +1,3 @@
-https://github.com/1024Digital/fmspickem
+https://1024digital.github.io/fmspickem/
+
 FMS 27 NFL Weekly Pick'em Sheets 
