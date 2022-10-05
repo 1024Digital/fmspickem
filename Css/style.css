@@ -111,6 +111,22 @@ h1 {
 .results-notes{
     font-family: 'Michroma', sans-serif;
 }
+/* ------------------Timer------------------------ */
+.gameContainer{
+    text-align: center;
+}
+.gameTimer{
+    /* font-family: 'BioRhyme Expanded', serif; */
+font-family: 'Black Ops One', cursive;
+/* font-family: 'Gruppo', cursive; */
+/* font-family: 'Michroma', sans-serif; */
+/* font-family: 'Orbitron', sans-serif; */
+/* font-family: 'Rubik Mono One', sans-serif; */
+font-size: xx-large;
+}
+
+
+
 
 /* ------------------Footer Section------------------------ */
 
