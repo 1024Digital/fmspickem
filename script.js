@@ -12,7 +12,7 @@ var x = setInterval(function() {
 
     var seconds = Math.floor((distance % (1000*60))/1000);
 
-    document.getElementById("timer").innerText= days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+    document.getElementById("timer").innerHTML= days + "d " + hours + "h " + minutes + "m " + seconds + "s";
     // switched innerHTML to innerText to test out Safari Timer
 
     if (distance < 0){
