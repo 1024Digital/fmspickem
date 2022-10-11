@@ -1,4 +1,4 @@
-var countDown = new Date ("october 6. 2022 20:15:00").getTime();
+var countDown = new Date ("october 13. 2022 20:20:00").getTime();
 
 
 
@@ -12,7 +12,8 @@ var x = setInterval(function() {
 
     var seconds = Math.floor((distance % (1000*60))/1000);
 
-    document.getElementById("timer").innerHTML= days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+    document.getElementById("timer").innerText= days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+    // switched innerHTML to innerText to test out Safari Timer
 
     if (distance < 0){
         clearInterval(x);
