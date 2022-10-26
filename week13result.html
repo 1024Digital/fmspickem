@@ -27,6 +27,26 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
     <link rel="manifest" href="/site.webmanifest">
+
+    <!-- -------------------custom style sheet for page---------------------------  -->
+
+    <style>
+
+        .headerContainer{
+            display: inline-flex;
+        }
+        .header{
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+            margin:0 10px;
+
+        }
+        .resultList{
+            font-family: 'Michroma', sans-serif;
+            font-size: larger;
+            line-height: 3em;
+        }
+    </style>
 </head>
 
 <body>
@@ -60,84 +80,20 @@
     <!-- ------------------------Jumbo Tron -------------------------------- -->
     <section>
         <div class="container-lg text-div">
-            <h1 class="img-text">Week 3 Detailed Results</h1>
+            <h1 class="img-text">Week 7 Detailed Results</h1>
         </div>
 
     </section>
     <section>
         <div class="container-fluid row">
             <div class="col-md-12 rules">
-                <table class="table">
-                    <thead class="resulthead">
-                        <tr>
-                            <th>Name</th>
-                            <th>Correct</th>
-                        </tr>
-                    </thead>
-                    <tbody class="resultbody">
-                        <tr>
-                            <td>Sierra</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>Belvis</td>
-                            <td>09</td>
-                        </tr>
-                        <tr>
-                            <td>Chief</td>
-                            <td>09</td>
-                        </tr>
-                        <tr>
-                            <td>Molnar</td>
-                            <td>08</td>
-                        </tr>
-                        <tr>
-                            <td>Crisci</td>
-                            <td>08</td>
-                        </tr>
-                        <tr>
-                            <td>Erin Ramos</td>
-                            <td>07</td>
-                        </tr>
-                        <tr>
-                            <td>Cahill</td>
-                            <td>07</td>
-                        </tr>
-                        <tr>
-                            <td>John Ramos</td>
-                            <td>07</td>
-                        </tr>
-                        <tr>
-                            <td>Cahill</td>
-                            <td>07</td>
-                        </tr>
-                        <tr>
-                            <td>Chief</td>
-                            <td>07</td>>
-                        </tr>
-                        <tr>
-                            <td>Crisci</td>
-                            <td>07</td>
-                        </tr>
-                        <tr>
-                            <td>Sierra</td>
-                            <td>07</td>
-                        </tr>
-                        <tr>
-                            <td>Sierra</td>
-                            <td>06</td>
-                        </tr>
-                        <tr>
-                            <td>Belvis</td>
-                            <td>05</td>
-                        </tr>
-                        <tr>
-                            <td>Sierra</td>
-                            <td>02</td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
+                <div class="headerContainer">
+                    <p class="header">Name</p>
+                    <p class="header">Correct</p>
+                </div>
+                <p class="header"></p>
+                <p id="jsout" class="resultList"></p>
+                
             </div>
         </div>
     </section>
@@ -150,6 +106,119 @@
         </div>
 
     </footer>
+    <script>
+        let players =
+        [
+                    {
+                    name:"Arce :",
+                    score:12,
+                    },
+                    {
+                    name:'Arce :',
+                    score:9,
+                    },
+                    {
+                    name:'Belvis :',
+                    score:9.5,
+                    },
+                    {
+                    name:'Belvis :',
+                    score:10,
+                    },
+                    {
+                    name:"Cahill :",
+                    score:7,
+                    },
+                    {
+                    name:'Cahill :',
+                    score:10,
+                    },
+                    {
+                    name:'Crisci :',
+                    score:0,
+                    },
+                    {
+                    name:'Crisci :',
+                    score: 0,
+                    },
+                    {
+                    name:"Chief :",
+                    score:12,
+                    },
+                    {
+                    name:'Chief :',
+                    score:7,
+                    },
+                    {
+                    name:'Febbo  :',
+                    score:6,
+                    },
+                    {
+                    name:'Oberman :',
+                    score:7,
+                    },
+                    {
+                    name:'John :',
+                    score:7,
+                    },
+                    {
+                    name:'Erin :',
+                    score:7,
+                    },
+                    {
+                    name:'Molnar :',
+                    score:0,
+                    },
+                    {
+                    name:'Sierra :',
+                    score:4,
+                    },
+                    {
+                    name:'Sierra :',
+                    score:9,
+                    },
+                    {
+                    name:'Sierra :',
+                    score:10,
+                    },
+                    {
+                    name:'Sierra :',
+                    score:8,
+                    },
+                    
+        ];
+        
+        displayWinners();
+        
+        players.sort(function(a,b){return b.score - a.score});
+        displayWinners();
+        
+        function displayWinners(){
+            document.getElementById("jsout").innerHTML=
+            players[0].name + "  " + players[0].score + "<br>"+
+            players[1].name + "  " + players[1].score + "<br>"+
+            players[2].name + "  " + players[2].score + "<br>"+
+            players[3].name + "  " + players[3].score + "<br>"+
+            players[4].name + "  " + players[4].score + "<br>"+
+            players[5].name + "  " + players[5].score + "<br>"+
+            players[6].name + "  " + players[6].score + "<br>"+
+            players[7].name + "  " + players[7].score + "<br>"+
+            players[8].name + "  " + players[8].score + "<br>"+
+            players[9].name + "  " + players[9].score + "<br>"+
+            players[10].name + "  " + players[10].score + "<br>"+
+            players[11].name + "  " + players[11].score + "<br>"+
+            players[12].name + "  " + players[12].score + "<br>"+
+            players[13].name + "  " + players[13].score + "<br>"+
+            players[14].name + "  " + players[14].score + "<br>"+
+            players[15].name + "  " + players[15].score + "<br>"+
+            players[16].name + "  " + players[16].score + "<br>"+
+            players[17].name + "  " + players[17].score + "<br>"+
+            players[18].name + "  " + players[18].score + "<br>"
+            // players[19].name + "  " + players[19].score + "<br>"
+            ;
+        }
+        
+            </script>
 
 </body>
 

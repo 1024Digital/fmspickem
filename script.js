@@ -1,4 +1,4 @@
-var countDown = new Date ("october 20. 2022 20:15:00").getTime();
+var countDown = new Date ("oct 27, 2022 20:15:00").getTime();
 
 
 
